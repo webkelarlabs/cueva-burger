@@ -1,0 +1,8 @@
+{
+  "name": "cueva-burger",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && yarn && yarn build && cd ../backend && yarn && yarn build",
+    "start": "node backend/dist/server.js"
+  }
+}
