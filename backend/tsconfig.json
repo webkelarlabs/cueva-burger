@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // necesario para #private de OpenAI
+    "module": "commonjs", // para Node
+    "moduleResolution": "node",
+    "esModuleInterop": true, // importa default modules correctamente
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true, // ignora errores dentro de node_modules
+    "outDir": "./dist" // directorio de compilación
+  },
+  "include": ["server.ts"], // o ["**/*.ts"] si hay más archivos
+  "exclude": ["node_modules"]
+}

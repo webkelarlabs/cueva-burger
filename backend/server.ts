@@ -1,12 +1,9 @@
-delete process.env.DEBUG_URL;
-
-const express = require("express");
-const dotenv = require("dotenv");
-const OpenAI = require("openai");
-const path = require("path");
+import express from "express";
+import dotenv from "dotenv";
+import path from "path";
+import OpenAI from "openai";
 
 dotenv.config();
-delete process.env.DEBUG_URL;
 
 const openai = new OpenAI({
   apiKey: process.env.API_KEY_GPT,
