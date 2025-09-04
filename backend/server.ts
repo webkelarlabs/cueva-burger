@@ -55,7 +55,10 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-const frontendPath = path.resolve(__dirname, "../frontend/dist");
+const projectRoot = path.resolve(__dirname, "../../"); // desde backend/dist
+const frontendPath = path.join(projectRoot, "frontend/dist");
+
+console.log("Serving frontend from:", frontendPath);
 
 app.use(express.static(frontendPath));
 
