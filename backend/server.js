@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 dotenv.config();
+delete process.env.DEBUG_URL;
 
 const openai = new OpenAI({
   apiKey: process.env.API_KEY_GPT,
