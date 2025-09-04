@@ -1,11 +1,14 @@
-import GoogleMapComponent from "./MapComponent";
+import GoogleMapComponent from "./MapComponent.js";
 import whatsapp from "../assets/socials/whatsapp.png";
 import facebook from "../assets/socials/facebook.png";
 import instagram from "../assets/socials/instagram.png";
 
 export function VisitComp() {
   return (
-    <div className="flex flex-col items-center gap-4 mt-40 px-6 md:px-12">
+    <div
+      data-aos="fade-right"
+      className="flex flex-col items-center gap-4 mt-40 px-6 md:px-12"
+    >
       <h2 className="font-[spartan] font-bold text-[#1F2937] text-3xl md:text-[48px] text-center">
         Visítanos
       </h2>

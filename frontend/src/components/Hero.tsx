@@ -17,20 +17,20 @@ export function HeroComp() {
       {/* Contenido */}
       <div className="relative z-10 flex flex-col justify-center h-full px-6 md:px-20 lg:px-32 text-white mt-8">
         <h1 className="font-[spartan] font-bold text-3xl text-center lg:text-start sm:text-5xl lg:text-6xl leading-tight">
-          Descubre y disfruta el sabor auténtico
+          Descubre y disfruta <br /> el sabor auténtico
         </h1>
 
-        <p className="mt-6 max-w-xl font-[poppins] text-base text-center lg:text-start sm:text-lg lg:text-2xl font-extralight">
+        <p className="mt-6 max-w-xl font-[poppins] text-base text-center sm:font-extralight lg:text-start sm:text-lg lg:text-2xl">
           Vení y descubrí un lugar donde la calidad y el sabor se encuentran.
           Nuestras especialidades están hechas con ingredientes frescos y pasión
           por la cocina.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <button className="px-6 py-3 border border-white text-white rounded-sm hover:bg-white/20 transition">
+          <button className="cursor-pointer px-6 py-3 border border-white text-white rounded-sm hover:bg-white/20 transition">
             Ver menú
           </button>
-          <button className="px-6 py-3 bg-white text-black rounded-sm hover:bg-gray-200 transition">
+          <button className="cursor-pointer px-6 py-3 bg-white text-black rounded-sm hover:bg-gray-200 transition">
             Visítanos
           </button>
         </div>

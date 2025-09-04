@@ -44,7 +44,10 @@ export function SectionIAComp() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-10 px-6 md:px-12 mt-32">
+    <div
+      data-aos="fade-left"
+      className="flex flex-col md:flex-row justify-center items-center gap-10 px-6 md:px-12 mt-32"
+    >
       {/* Bloque del chat */}
       <div className="w-full md:w-[500px] space-y-6">
         <h2 className="font-[spartan] font-bold text-[#1F2937] text-3xl md:text-[40px]">

@@ -6,10 +6,10 @@ export function HeaderComp() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50 h-[68px]">
       <div className="flex items-center justify-between h-16 px-4 sm:px-8 lg:px-16">
         {/* Logo */}
-        <img className="w-16 h-auto" src={logo} alt="Logo" />
+        <img className="w-16 h-auto cursor-pointer" src={logo} alt="Logo" />
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-10">
