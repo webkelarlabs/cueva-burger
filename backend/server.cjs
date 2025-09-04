@@ -1,13 +1,9 @@
 delete process.env.DEBUG_URL;
 
-import express from "express";
-import dotenv from "dotenv";
-import OpenAI from "openai";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const express = require("express");
+const dotenv = require("dotenv");
+const OpenAI = require("openai");
+const path = require("path");
 
 dotenv.config();
 delete process.env.DEBUG_URL;
