@@ -12,6 +12,10 @@ const openai = new OpenAI({
 const app = express();
 app.use(express.json());
 
+app.get("/hola", (req, res) => {
+  res.json("Hola");
+});
+
 app.post("/api/chat", async (req, res) => {
   const { message } = req.body;
   try {
