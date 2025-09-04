@@ -1,0 +1,18 @@
+# node
+node_modules/
+**/node_modules/
+
+# compilados frontend
+frontend/dist/
+frontend/.vite/
+
+# compilados backend (si usás TypeScript)
+backend/dist/
+backend/build/
+
+# env
+*.env
+*.env.local
+
+# sistema
+.DS_Store
