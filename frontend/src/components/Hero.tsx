@@ -20,7 +20,7 @@ export function HeroComp() {
           Descubre y disfruta <br /> el sabor auténtico
         </h1>
 
-        <p className="mt-6 max-w-xl font-[poppins] text-base text-center sm:font-extralight lg:text-start sm:text-lg lg:text-2xl">
+        <p className="mt-6 max-w-xl text-base text-center sm:text-lg lg:text-2xl font-[spartan] font-extralight lg:text-start">
           Vení y descubrí un lugar donde la calidad y el sabor se encuentran.
           Nuestras especialidades están hechas con ingredientes frescos y pasión
           por la cocina.
