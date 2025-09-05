@@ -25,7 +25,7 @@ export default function ChatButton() {
 
     // Llamada al backend (Node.js/Express) - opcional si no tenés backend aún
     try {
-      const res = await fetch("http://localhost:3000/api/chat", {
+      const res = await fetch("https://cueva-burger.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage }),
