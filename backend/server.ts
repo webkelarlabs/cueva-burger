@@ -33,7 +33,7 @@ app.post("/api/chat", async (req, res) => {
           Menú: Pizzas Caseras: nuestras pizzas artesanales son elaboradas con ingredientes frescos y de calidad.
           Hamburguesas: Carne 100% res premium, panes artesanales y combinaciones únicas que deleitarán tu paladar.
           Empanadas: Sabores tradicionales y gourmet, carne, pollo, choclo, al horno y fritas, con masas crocantes y rellenos jugosos preparados al momento.
-          Pizzas más vendida: Nuestra clásica pizza muzzarella, con abundante queso, tomate fresco y una masa suave y recién horneada.
+          Pizzas más vendida: Nuestra clásica pizza muzzarella, con abundante queso, salsa de tomate fresco y una masa suave y recién horneada.
           Pizzas Vegetarianas: Vegetarianas preparadas con ingredientes frescos de origen vegetal, ideales para quienes buscan una alternativa saludable sin perder el auténtico sabor.
           Postres caseros: postres caseros como flan con dulce de leche. Nuestros postres son elaborados diariamente, garantizando frescura y sabor.
           Sé amable y breve.
