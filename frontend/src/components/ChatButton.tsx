@@ -15,12 +15,14 @@ export default function ChatButton() {
     }
   }, [messages]);
 
-  const handleSend = async () => {
-    if (!input) return;
+  const handleSend = async (faqReceived?: string) => {
+    if (!input && !faqReceived) return;
 
-    // Agregar mensaje del usuario
-    setMessages([...messages, { sender: "Tú", text: input }]);
-    const userMessage = input;
+    setMessages([
+      ...messages,
+      { sender: "Tú", text: input ? input : faqReceived },
+    ]);
+    const userMessage = input ? input : faqReceived;
     setInput("");
 
     // Llamada al backend (Node.js/Express) - opcional si no tenés backend aún
@@ -77,18 +79,21 @@ export default function ChatButton() {
           Hacé tus consultas!
         </div>
 
-        <div className="flex-1 p-3 overflow-y-auto flex flex-col gap-2">
+        {/* Área de mensajes */}
+        <div className="p-3 flex flex-col gap-2 overflow-y-auto h-[300px]">
+          {/* Header asistente */}
           <div className="flex gap-3">
-            <img src={robotGray} alt="robot" />
+            <img src={robotGray} alt="robot" className="w-10 h-10" />
             <div className="flex flex-col">
               <h6 className="font-[poppins]">Asistente virtual</h6>
-              <div className="flex items-center space-x-2 cursor-pointer">
+              <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 rounded-full bg-green-600 animate-pulse"></div>
-                <h6>En linea ahora</h6>
+                <h6>En línea ahora</h6>
               </div>
             </div>
           </div>
-          {/* FAQs visibles solo si no hay input ni mensajes */}
+
+          {/* FAQs visibles solo si no hay mensajes */}
           {messages.length === 0 && (
             <div className="mb-32">
               <p className="font-poppins text-lg font-bold mb-2">
@@ -99,9 +104,10 @@ export default function ChatButton() {
                   <div
                     key={i}
                     className="px-3 py-1 rounded-full bg-gray-300 text-[13px] font-poppins cursor-pointer hover:bg-gray-400 transition"
-                    onClick={() =>
-                      setMessages([...messages, { sender: "Tú", text: faq }])
-                    }
+                    onClick={() => {
+                      setMessages([...messages, { sender: "Tú", text: faq }]);
+                      handleSend(faq);
+                    }}
                   >
                     {faq}
                   </div>
@@ -110,7 +116,7 @@ export default function ChatButton() {
             </div>
           )}
 
-          {/* Mensajes del chat */}
+          {/* Mensajes */}
           {messages.map((msg, index) => (
             <div
               key={index}
@@ -138,7 +144,7 @@ export default function ChatButton() {
           />
           <button
             className="bg-[#1F2937] text-white px-4 hover:bg-blue-300 hover:cursor-pointer transition"
-            onClick={handleSend}
+            onClick={() => handleSend}
           >
             Enviar
           </button>

@@ -1,13 +1,14 @@
-import { HeaderComp } from "./components/Header";
-import { HeroComp } from "./components/Hero";
-import { SpecialComp } from "./components/Specials";
-import { MenuComp } from "./components/Menu";
-import { HistoryComp } from "./components/History";
-import ChatButton from "./components/ChatButton";
-import { ButtonWhatsappComp } from "./components/ButtonWhatsapp";
-import { SectionIAComp } from "./components/SectionIA";
-import { VisitComp } from "./components/Visit";
-import { FooterComp } from "./components/Footer";
+import { HeaderComp } from "./components/Header.js";
+import { HeroComp } from "./components/Hero.js";
+import { SpecialComp } from "./components/Specials.js";
+import { MenuComp } from "./components/Menu.js";
+import { HistoryComp } from "./components/History.js";
+import ChatButton from "./components/ChatButton.js";
+import { ButtonWhatsappComp } from "./components/ButtonWhatsapp.js";
+import { SectionIAComp } from "./components/SectionIA.js";
+import { VisitComp } from "./components/Visit.js";
+import { FooterComp } from "./components/Footer.js";
+
 export function AppComp() {
   return (
     <div>

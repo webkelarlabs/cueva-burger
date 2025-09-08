@@ -29,7 +29,7 @@ const cards = [
 export function SpecialComp() {
   return (
     <div
-      data-aos="fade-right"
+      data-aos="fade-down"
       className="flex flex-col items-center mt-20 overflow-x-hidden px-4"
     >
       {/* Título */}

@@ -1,7 +1,7 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "300px", // ancho del mapa
+  width: "320px", // ancho del mapa
   height: "350px", // alto del mapa
 };
 

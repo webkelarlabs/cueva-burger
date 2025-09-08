@@ -6,7 +6,7 @@ import instagram from "../assets/socials/instagram.png";
 export function VisitComp() {
   return (
     <div
-      data-aos="fade-right"
+      data-aos="fade-down"
       className="flex flex-col items-center gap-4 mt-40 px-6 md:px-12"
     >
       <h2 className="font-[spartan] font-bold text-[#1F2937] text-3xl md:text-[48px] text-center">

@@ -5,7 +5,7 @@ import nextimg from "../assets/siguiente.png";
 export function MenuComp() {
   return (
     <div
-      data-aos="fade-left"
+      data-aos="fade-up"
       className="flex flex-col items-center mt-32 px-4 overflow-x-hidden"
     >
       {/* Título */}

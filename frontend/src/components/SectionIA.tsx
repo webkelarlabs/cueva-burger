@@ -45,7 +45,7 @@ export function SectionIAComp() {
 
   return (
     <div
-      data-aos="fade-left"
+      data-aos="fade-up"
       className="flex flex-col md:flex-row justify-center items-center gap-10 px-6 md:px-12 mt-32"
     >
       {/* Bloque del chat */}

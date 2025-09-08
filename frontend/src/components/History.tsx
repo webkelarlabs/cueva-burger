@@ -3,7 +3,7 @@ import imgHistory from "../assets/history.png";
 export function HistoryComp() {
   return (
     <div
-      data-aos="fade-right"
+      data-aos="fade-down"
       className="flex flex-col md:flex-row justify-center items-center gap-12 mt-28 mb-32 px-6 md:px-0"
     >
       {/* Sección de título e imagen */}
